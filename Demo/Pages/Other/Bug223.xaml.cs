@@ -13,9 +13,9 @@ namespace Demo
         {
             InitializeComponent();
 
-			ItemsSource = new List<int> { 0, 1, 2, 3 };
+            ItemsSource = new List<int> { 0, 1, 2, 3 };
 
-			BindingContext = this;
+            BindingContext = this;
         }
     }
 }

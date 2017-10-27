@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Demo.HeightIssuePage"
 	xmlns:cv="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselView.FormsPlugin.Abstractions">
 
-	<Grid x:Name="LayoutRoot"
+    <Grid x:Name="LayoutRoot"
           Padding="0"
           RowSpacing="0"
           ColumnSpacing="0">
@@ -29,14 +29,14 @@
                 </cv:CarouselViewControl.ItemTemplate>
 
             </cv:CarouselViewControl>
-		
+
         </StackLayout>
 
         <Button Text="NEW RIDE"
                 VerticalOptions="Center"
                 Margin="16,32,16,16"
                 Grid.Row="1" />
-        
+
     </Grid>
-	
+
 </ContentPage>

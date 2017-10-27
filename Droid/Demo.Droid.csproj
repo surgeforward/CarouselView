@@ -20,7 +20,8 @@
     <ReleaseVersion>3.1.1</ReleaseVersion>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
-    <AndroidTlsProvider></AndroidTlsProvider>
+    <AndroidTlsProvider>
+    </AndroidTlsProvider>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -138,17 +139,17 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\Demo\Demo.csproj">
-      <Project>{C9BC51AC-22BD-4471-BEFD-D41D865C0B33}</Project>
-      <Name>Demo</Name>
-    </ProjectReference>
     <ProjectReference Include="..\CarouselView\CarouselView.FormsPlugin.Abstractions\CarouselView.FormsPlugin.Abstractions.csproj">
-      <Project>{14C534B6-1984-41A9-A384-D3A5508588E3}</Project>
+      <Project>{4e1ca504-6cb3-4eb3-a3b5-3ebaf0974e07}</Project>
       <Name>CarouselView.FormsPlugin.Abstractions</Name>
     </ProjectReference>
     <ProjectReference Include="..\CarouselView\CarouselView.FormsPlugin.Android\CarouselView.FormsPlugin.Android.csproj">
       <Project>{AD2D2DB4-E781-4CF1-9B62-3AAD264F196D}</Project>
       <Name>CarouselView.FormsPlugin.Android</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Demo\Demo.csproj">
+      <Project>{9d7e1ff7-814a-4613-a69b-f795d2f09303}</Project>
+      <Name>Demo</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="..\packages\Xamarin.Android.Support.Compat.25.4.0.1\build\MonoAndroid70\Xamarin.Android.Support.Compat.targets" Condition="Exists('..\packages\Xamarin.Android.Support.Compat.25.4.0.1\build\MonoAndroid70\Xamarin.Android.Support.Compat.targets')" />

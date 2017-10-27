@@ -4,11 +4,11 @@ using Xamarin.Forms;
 
 namespace Demo
 {
-	public partial class Bio : ContentView
-	{
-		public Bio()
-		{
-			InitializeComponent();
-		}
-	}
+    public partial class Bio : ContentView
+    {
+        public Bio()
+        {
+            InitializeComponent();
+        }
+    }
 }

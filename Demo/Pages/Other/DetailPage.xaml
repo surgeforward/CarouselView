@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+﻿<?xml version="1.0" encoding="UTF-8" ?>
 <ContentPage x:Class="Demo.DetailPage"
              xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
@@ -18,19 +18,19 @@
                      VerticalOptions="FillAndExpand"
                      Grid.Row="0">
 
-        <cv:CarouselViewControl x:Name="CardCarousel"
+            <cv:CarouselViewControl x:Name="CardCarousel"
                                 Margin="8"
                                 HorizontalOptions="FillAndExpand"
                                 VerticalOptions="FillAndExpand"
                                 BackgroundColor="Aqua"
                                 ItemsSource="{Binding ItemsSource}">
-            <cv:CarouselViewControl.ItemTemplate>
-                <DataTemplate>
-                    <Button BackgroundColor="Blue" Text="hello world 4" />
-                </DataTemplate>
-            </cv:CarouselViewControl.ItemTemplate>
+                <cv:CarouselViewControl.ItemTemplate>
+                    <DataTemplate>
+                        <Button BackgroundColor="Blue" Text="hello world 4" />
+                    </DataTemplate>
+                </cv:CarouselViewControl.ItemTemplate>
 
-        </cv:CarouselViewControl>
+            </cv:CarouselViewControl>
 
         </StackLayout>
 

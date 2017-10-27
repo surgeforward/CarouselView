@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Demo.LeakPage"
 	xmlns:local="clr-namespace:Demo"
     xmlns:cv="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselView.FormsPlugin.Abstractions" >
-	
-	 <ContentPage.ToolbarItems>
+
+    <ContentPage.ToolbarItems>
         <ToolbarItem Text="Add Page" Command="{Binding AddPage}" Order="Primary" Priority="0"/>
         <ToolbarItem Text="Shrink" Command="{Binding Shrink}" Order="Primary" Priority="0"/>
     </ContentPage.ToolbarItems>
-	
+
     <!--<cv:CarouselViewControl 
         ItemsSource="{Binding Pages}"
         ShowIndicators="true"
@@ -24,7 +24,7 @@
         </cv:CarouselViewControl.ItemTemplate>
     </cv:CarouselViewControl>-->
 
-	<!--<ContentPage.Resources>
+    <!--<ContentPage.Resources>
         <ResourceDictionary>
             <ControlTemplate x:Key="carousel">
                 <cv:CarouselViewControl 
@@ -74,7 +74,7 @@
                 </DataTemplate>
             </cv:CarouselViewControl.ItemTemplate>
         </cv:CarouselViewControl>
-        
+
 
         <Grid Grid.Row="1"
               Grid.Column="0"
@@ -110,5 +110,5 @@
             </Label>
         </Grid>
     </Grid>
-	
+
 </ContentPage>

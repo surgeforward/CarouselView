@@ -5,15 +5,15 @@ using Xamarin.Forms;
 
 namespace Demo
 {
-	public partial class MasterPage : ContentPage
-	{
-		public MasterPage()
-		{
-			InitializeComponent();
+    public partial class MasterPage : ContentPage
+    {
+        public MasterPage()
+        {
+            InitializeComponent();
 
-			Title = "Master";
+            Title = "Master";
 
-			BackgroundColor = Color.Silver;
-		}
-	}
+            BackgroundColor = Color.Silver;
+        }
+    }
 }

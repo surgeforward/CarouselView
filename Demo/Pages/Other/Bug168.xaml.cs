@@ -17,43 +17,43 @@ namespace Demo
     }
 
     [AddINotifyPropertyChangedInterface]
-	public class CarouselPageViewModel
-	{
+    public class CarouselPageViewModel
+    {
 
-		#region private
+        #region private
 
-		private ObservableCollection<String> _items = new ObservableCollection<String>();
-		//private Boolean _isVisible = false;
+        private ObservableCollection<String> _items = new ObservableCollection<String>();
+        //private Boolean _isVisible = false;
 
-		#endregion
+        #endregion
 
-		public ObservableCollection<String> Items
-		{
-			get { return _items; }
-		}
+        public ObservableCollection<String> Items
+        {
+            get { return _items; }
+        }
 
-		public Boolean IsVisible
-		{
+        public Boolean IsVisible
+        {
             get;
             set;
-		}
+        }
 
 
-		public Command UpdateCarouselCommand
-		{
-			get
-			{
-				return new Command(() => Items.Add(String.Format("Item {0}", Items.Count + 1)));
-			}
-		}
+        public Command UpdateCarouselCommand
+        {
+            get
+            {
+                return new Command(() => Items.Add(String.Format("Item {0}", Items.Count + 1)));
+            }
+        }
 
-		public Command ToggleVisibilityCommand
-		{
-			get
-			{
-				return new Command(() => IsVisible = !IsVisible);
-			}
-		}
+        public Command ToggleVisibilityCommand
+        {
+            get
+            {
+                return new Command(() => IsVisible = !IsVisible);
+            }
+        }
 
-	}
+    }
 }

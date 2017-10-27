@@ -21,7 +21,7 @@ namespace Demo.Pages
 
         public ListViewModel()
         {
-            Items = new List<List<string>>() { 
+            Items = new List<List<string>>() {
                 new List<string>() { "Monday", "Tuesday" },
                 new List<string>() { "Monday", "Tuesday" }
             };

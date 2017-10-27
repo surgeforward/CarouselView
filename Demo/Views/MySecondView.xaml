@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentView xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="Demo.MySecondView">
 
-	<!--<ListView x:Name="myList">
+    <!--<ListView x:Name="myList">
 		<ListView.ItemTemplate>
             <DataTemplate>
                 <ViewCell>
@@ -48,10 +48,10 @@
 
 	</AbsoluteLayout>-->
 
-	<!-- requires x:Name so we can reference in RelativeToView on Green box -->
-	<RelativeLayout>
-    
-	    <BoxView Color="Red" x:Name="Red"
+    <!-- requires x:Name so we can reference in RelativeToView on Green box -->
+    <RelativeLayout>
+
+        <BoxView Color="Red" x:Name="Red"
 	            WidthRequest="200" 
 	            HeightRequest="200"
 	             RelativeLayout.XConstraint=
@@ -60,7 +60,7 @@
 	             RelativeLayout.YConstraint=
 	                 "{ConstraintExpression Type=Constant, 
 	                                        Constant=20}" />
-	    <BoxView Color="Green"
+        <BoxView Color="Green"
 	             RelativeLayout.XConstraint=
 	                 "{ConstraintExpression Type=RelativeToParent, 
 	                                        Property=Width,
@@ -71,7 +71,7 @@
 	                                        Property=Y, 
 	                                        ElementName=Red,
 	                                        Constant=-5}" />
-	    <BoxView Color="Yellow"
+        <BoxView Color="Yellow"
 	            WidthRequest="100" 
 	            HeightRequest="100"
 	             RelativeLayout.XConstraint=
@@ -83,6 +83,6 @@
 	                 "{ConstraintExpression Type=RelativeToParent, 
 	                                        Property=Height,
 	                                        Factor=0.3}" />
-	</RelativeLayout>
+    </RelativeLayout>
 
 </ContentView>

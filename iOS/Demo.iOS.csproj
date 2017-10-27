@@ -29,7 +29,8 @@
     <MtouchDebug>true</MtouchDebug>
     <CodesignKey>iPhone Developer: Alexander Reyes (T3VKUDC3C3)</CodesignKey>
     <MtouchProfiling>true</MtouchProfiling>
-    <CodesignProvision></CodesignProvision>
+    <CodesignProvision>
+    </CodesignProvision>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <DebugType>full</DebugType>
@@ -111,17 +112,17 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\Demo\Demo.csproj">
-      <Project>{C9BC51AC-22BD-4471-BEFD-D41D865C0B33}</Project>
-      <Name>Demo</Name>
-    </ProjectReference>
     <ProjectReference Include="..\CarouselView\CarouselView.FormsPlugin.Abstractions\CarouselView.FormsPlugin.Abstractions.csproj">
-      <Project>{14C534B6-1984-41A9-A384-D3A5508588E3}</Project>
+      <Project>{4e1ca504-6cb3-4eb3-a3b5-3ebaf0974e07}</Project>
       <Name>CarouselView.FormsPlugin.Abstractions</Name>
     </ProjectReference>
     <ProjectReference Include="..\CarouselView\CarouselView.FormsPlugin.iOS\CarouselView.FormsPlugin.iOS.csproj">
       <Project>{D525F236-6A2D-4010-B1CC-4A4B8581C90B}</Project>
       <Name>CarouselView.FormsPlugin.iOS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Demo\Demo.csproj">
+      <Project>{9d7e1ff7-814a-4613-a69b-f795d2f09303}</Project>
+      <Name>Demo</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

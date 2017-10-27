@@ -4,11 +4,11 @@ using Xamarin.Forms;
 
 namespace Demo
 {
-	public partial class PhotoUrl : ContentView
-	{
-		public PhotoUrl()
-		{
-			InitializeComponent();
-		}
-	}
+    public partial class PhotoUrl : ContentView
+    {
+        public PhotoUrl()
+        {
+            InitializeComponent();
+        }
+    }
 }

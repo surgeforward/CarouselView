@@ -7,18 +7,18 @@ using Demo;
 
 namespace Demo
 {
-	public partial class MyFirstView : ContentView
-	{
-		public MyFirstView ()
-		{
-			InitializeComponent ();
+    public partial class MyFirstView : ContentView
+    {
+        public MyFirstView()
+        {
+            InitializeComponent();
             BackgroundColor = Color.White;
-		}
+        }
 
-		void Handle_Clicked(object sender, System.EventArgs e)
-		{
-			MessagingCenter.Send<MyFirstView>(this, "RemoveMe");
-		}
+        void Handle_Clicked(object sender, System.EventArgs e)
+        {
+            MessagingCenter.Send<MyFirstView>(this, "RemoveMe");
+        }
 
         protected override void OnParentSet()
         {
@@ -26,6 +26,6 @@ namespace Demo
                 Debug.WriteLine("Parent setup.");
             base.OnParentSet();
         }
-	}
+    }
 }
 
